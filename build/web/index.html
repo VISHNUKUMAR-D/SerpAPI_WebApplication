@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Serp API</title>
+<link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+</head>
+<body><br><br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header" style="text-align: center">
+                <h4>Enter your search</h4>
+            </div>
+            <div class="card-body">
+                <div class="container">
+                <div class="form-group">
+                    <form action="DatabaseServlet" method="post" style="text-align: center">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="usr" name="SearchString">
+                            <div class="input-group-append">
+                              <button type="submit" class="btn btn-success"> Search </button>
+                            </div>
+                         </div>
+                    </form>
+                    <div class="input-group-append">
+                            <form action="HistoryServlet" method="post"><button type="submit" class="btn btn-warning"> History </button></form>
+                            <form action="GraphServlet" method="post"><button type="submit" class="btn btn-primary"> Graph </button></form>   
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
